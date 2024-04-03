@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    background-color: #3E3F49;
+    color: #DDE2FF;
+
+    ::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        background-color: white;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.vertical-line {
+    color: #DFE0EB;
+}
+
+.minicard:hover > span {
+    color: #3751FF;
+}
+
+.minicard:hover > strong {
+    color: #3751FF;
+}
